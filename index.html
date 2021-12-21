@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Flower's Story</title>
+    <link rel='icon' type='image/x-icon' href='./images/4539_LAY.jpeg'>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' href='./styles/site.css'>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  </head>
+  
+  <body>
+    <section id='search_bar'>
+      <input type='text' name='search_words' placeholder='. . . . . . . . . .'>
+      <p id='search_bar_close' onclick='closeSearch()'>✘</p>
+
+      <section id='search_resualt'>
+        <div id='search_resualt_container'>
+        </div>
+      </section>
+    </section>
+  
+    <section id='full_body'>
+      <nav> 
+        <div id='nav_items'>
+          <section id='logo'>
+            <p>Flower<span>'</span>s</p>
+          </section>
+          <ul id='nav_list'>
+            <li><a href='#home' onclick="navRes()">Home</a></li>
+            <li><a href='#main' onclick="navRes()">About</a></li>
+            <li><a href='#collection' onclick="navRes()">Collection</a></li>
+            <li><a href='#footer' onclick="navRes()">Contact</a></li>
+            
+            <div id='res_nav_close' onclick="navRes()">✘</div>
+          </ul>
+        </div>
+
+        <div id='nav_buttons'>
+          <button id='search_icon' onclick='openSearch()'><span>&#9906;</span></button>
+          <button id='shopping_bag_icon' onclick="openShoppingBag()"><img src="./images/icons/shopping.png" alt='shopping bag icon'> <span id='shopping_bag_length'>0</span></button>
+        </div>
+
+       <div id='res_nav' onclick="navRes()">☰</div>
+      </nav>
+
+      <section id='shopping_bag'>
+        <div id='shopping_items'>
+          <button id='close_shopping_bag' onclick="closeShoppingBag()">✘</button>
+          <div id='items'> <!-- this content will be added automatically by JS --></div>
+          <div id='total_price_container'>
+            <p id='total_text'>Total Price</p>
+            <p id='total_price'><!-- this content will be added automatically by JS --></p>
+            <div id='methods'>
+              <img src='./images/icons/mastercard.svg' alt='mastercard icon'>
+              <img src='./images/icons/visa.svg' alt='visa icon'>
+              <img src='./images/icons/maestro.svg' alt='maestro icon'>
+            </div>
+            <button>BUY</button>
+          </div>
+        </div>
+      </section>
+
+      <header id='home'>
+        <section id='header_text'>
+          <h1>We have a <br><span>collection of the finest and <br>rarest roses in the world.</span></h1>
+        </section>
+        <section id='header_images'>
+          <section>
+            <div class='sence'>
+              <div class="cube s1 show-front">
+                <div class="cube_face cube_face_front"> <img src='./images/img1.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_back"> <img src='./images/img4.jpeg' alt='flowers'> </div>
+                <div class="cube_face cube_face_right"> <img src='./images/img5.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_left"> <img src='./images/img23.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_top"> <img src='./images/img22.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_bottom"> <img src='./images/img21.jpeg' alt='flower'> </div>
+              </div>
+            </div>
+            <div class='sence'>
+              <div class="cube s2 show-front">
+                <div class="cube_face cube_face_front"> <img src='./images/img16.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_back"> <img src='./images/img6.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_right"> <img src='./images/img14.jpg' alt='flower'> </div>
+                <div class="cube_face cube_face_left"> <img src='./images/img20.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_top"> <img src='./images/img7.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_bottom"> <img src='./images/img19.jpeg' alt='flower'> </div>
+              </div>
+            </div>
+            <div class='sence'>
+              <div class="cube s1 show-front">
+                <div class="cube_face cube_face_back"> <img src='./images/img16.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_front"> <img src='./images/img29.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_right"> <img src='./images/img3.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_left"> <img src='./images/img15.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_top"> <img src='./images/img19.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_bottom"> <img src='./images/img24.jpeg' alt='flower'> </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class='sence'>
+              <div class="cube s2 show-front">
+                <div class="cube_face cube_face_front"> <img src='./images/img15.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_back"> <img src='./images/img26.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_right"> <img src='./images/img27.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_left"> <img src='./images/img4.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_top"> <img src='./images/img28.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_bottom"> <img src='./images/img29.jpeg' alt='flower'> </div>
+              </div>
+            </div>
+            <div class='sence'>
+              <div class="cube s1 show-front">
+                <div class="cube_face cube_face_front"> <img src='./images/img17.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_back"> <img src='./images/img30.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_right"> <img src='./images/img31.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_left"> <img src='./images/img30.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_top"> <img src='./images/img5.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_bottom"> <img src='./images/img11.jpeg' alt='flower'> </div>
+              </div>
+            </div>
+            <div class='sence'>
+              <div class="cube s2 show-front">
+                <div class="cube_face cube_face_back"> <img src='./images/img3.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_front"> <img src='./images/img18.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_right"> <img src='./images/img8.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_left"> <img src='./images/img5.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_top"> <img src='./images/img10.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_bottom"> <img src='./images/img6.jpeg' alt='flower'> </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class='sence'>
+              <div class="cube s1 show-front">
+                <div class="cube_face cube_face_front"> <img src='./images/img2.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_back"> <img src='./images/img4.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_right"> <img src='./images/img9.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_left"> <img src='./images/img10.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_top"> <img src='./images/img11.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_bottom"> <img src='./images/img16.jpeg' alt='flower'> </div>
+              </div>
+            </div>
+            <div class='sence'>
+              <div class="cube s2 show-front">
+                <div class="cube_face cube_face_back"> <img src='./images/img20.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_front"> <img src='./images/img31.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_right"> <img src='./images/img22.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_left"> <img src='./images/img19.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_top"> <img src='./images/img26.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_bottom"> <img src='./images/img18.jpeg' alt='flower'> </div>
+              </div>
+            </div>
+            <div class='sence'>
+              <div class="cube s1 show-front">
+                <div class="cube_face cube_face_front"> <img src='./images/img3.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_back"> <img src='./images/img17.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_right"> <img src='./images/img10.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_left"> <img src='./images/img16.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_top"> <img src='./images/img15.jpeg' alt='flower'> </div>
+                <div class="cube_face cube_face_bottom"> <img src='./images/img15.jpeg' alt='flower'> </div>
+              </div>
+            </div>     
+          </section>
+        </section>
+
+        <div id='header_back_style'><img src='./images/icons/flower.png'></div>
+      </header>
+
+      <main id='main'>
+        <h2 class='title'><span id='title_left_des'></span>Our Advantages<span id='title_right_des'></span></h2>
+        <section id='our_advantages'>
+          <div class='advantage'>
+            <p>Fresh flowers</p>
+            <img src='./images/icons/flowers.png' alt='fast delivery icon'>
+          </div>
+          <div class='advantage'>
+            <p>Competitive prices</p>
+            <img src='./images/icons/best-price.png' alt='fast delivery icon'>
+          </div>
+          <div class='advantage'>
+            <p>Fast delivery</p>
+            <img src='./images/icons/shipped.png' alt='fast delivery icon'>
+          </div>
+        </section>
+
+        <h2 class='title'><span id='title_left_des'></span> Our Collection <span id='title_right_des'></span></h2>
+        <section id='collection'> 
+          <!-- this content will be added automatically by JS -->
+        </section>
+          <div id='pagination'>
+            <a href='#collection' id="prev" onclick='prev(this)' class='disabled'>‹</a>
+            <p id="min_num">1</p>
+            <p>/</p>
+            <p id="max_num"></p>
+            <a href='#collection' id="next" onclick='next(this)'>›</a>
+          </div>
+      </main>
+
+      <footer id='footer'>
+        <h2 class='title'><span id='title_left_des'></span>Contact Us<span id='title_right_des'></span></h2>
+        <form action='#'>
+          <div id='name'>
+            <input type='text' placeholder="First Name" required>
+            <input type='text' placeholder="Last Name" required>
+          </div>
+          <input type='email' placeholder="Your E-mail" required>
+          <textarea placeholder="Your Massage" required></textarea>
+          <button type='submit'>Send</button>
+        </form>
+
+        <div id='personal_info'>
+          Made With Love ❤️️ By "<a href='https://khalednassar500.github.io/k-n/' target="_blank"> Khaled Nassar </a>"
+        </div>
+      </footer>
+    <script src='./scripts/site.js'></script>
+  </body>
+</html>
