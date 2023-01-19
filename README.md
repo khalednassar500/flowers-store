@@ -35,4 +35,4 @@ Flowers-store is an e-commerce website for buying flowers. It allows users to br
 - **Khaled Nassar** - ( *Business fair* :- [github.com/khalednassar500](https://github.com/khalednassar500/) )
 
 ## Project photos 
-![This is an image](/screencapture.png)
+![This is an image](/project-2.png)
