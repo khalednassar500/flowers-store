@@ -1,4 +1,4 @@
-# [Flower's Story](https://khalednassar500.github.io/flowers-story/)
+# [Flower's Story](https://khalednassar500.github.io/flowers-store/)
 Flowers-store is an e-commerce website for buying flowers. It allows users to browse through a variety of flowers, The website also includes a cart system, where users can add flowers to their cart.
 
 ## Features
